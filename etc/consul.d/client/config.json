@@ -1,0 +1,19 @@
+{
+    "bootstrap": false,
+    "server": false,
+    "datacenter": "gcp",
+    "data_dir": "/var/consul",
+    "ui_dir": "/home/consul/dist",
+    "encrypt": "run consul keygen to get new key",
+    "ca_file": "/etc/consul.d/ssl/ca.cert",
+    "cert_file": "/etc/consul.d/ssl/consul.cert",
+    "key_file": "/etc/consul.d/ssl/consul.key",
+    "verify_incoming": true,
+    "verify_outgoing": true,
+    "log_level": "INFO",
+    "enable_syslog": true,
+    "start_join": ["server.ip.1", "server.ip.2", "server.ip.3"],
+    "ports": {
+	    "https": 8080
+    }
+}
